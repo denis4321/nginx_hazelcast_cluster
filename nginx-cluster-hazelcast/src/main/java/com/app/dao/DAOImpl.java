@@ -22,7 +22,7 @@ import javax.sql.DataSource;
 @ApplicationScoped
 public class DAOImpl implements DAO {
 
-    @Resource
+    @Resource(name="personsDS")
     private DataSource ds;
 
     @Override
